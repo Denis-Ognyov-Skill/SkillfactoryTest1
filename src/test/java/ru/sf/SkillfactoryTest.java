@@ -41,6 +41,8 @@ public class SkillfactoryTest {
     @Test
     public void mainPageTitle() {
 
+            //Проверка совпадения сайта с заглавием
+
             webDriver.navigate().to("https://www.skillfactory.ru");
 
             wait.until(ExpectedConditions.presenceOfElementLocated(By.className("title")));
@@ -58,6 +60,8 @@ public class SkillfactoryTest {
     @Test
     public void clickAllCourses() {
 
+            //Проверка работы кнопки "Все курсы"
+
             webDriver.navigate().to("https://www.skillfactory.ru");
 
             WebElement AllCoursesButton = webDriver.findElement(By.className("directions__list-link_green"));
@@ -70,6 +74,8 @@ public class SkillfactoryTest {
 
     @Test
     public void clickContacts() {
+
+            //Проверка работоспособности кнопки "Контакты" в шапке веб-страницы
 
             webDriver.navigate().to("https://www.skillfactory.ru");
 
@@ -84,6 +90,8 @@ public class SkillfactoryTest {
     @Test
     public void clickProgrammirovanie() {
 
+            //Проверка работы кнопки "Программирование"
+
             webDriver.navigate().to("https://www.skillfactory.ru");
 
             WebElement Programmirovanie = webDriver.findElement(By.partialLinkText("Программирование"));
@@ -96,6 +104,8 @@ public class SkillfactoryTest {
 
     @Test
     public void clickTestirovanie() {
+
+            //Проверка работы кнопки "Тестирование"
 
             webDriver.navigate().to("https://www.skillfactory.ru");
 
@@ -110,6 +120,8 @@ public class SkillfactoryTest {
     @Test
     public void clickOnlineCourses() {
 
+            //Проверка работоспособности кнопки меню "Онлайн курсы" в шапке веб-страницы с выпадающим списком
+
             webDriver.navigate().to("https://www.skillfactory.ru");
 
             WebElement OnlineCourses = webDriver.findElement(By.className("t978__tm-link"));
@@ -122,6 +134,8 @@ public class SkillfactoryTest {
 
     @Test
     public void clickOnlineCoursesInfrastructure() {
+
+        //Проверка перехода с кнопки меню "Онлайн курсы" в шапке веб-страницы по выпадающему списку курсов. Курс "Инфраструктура".
 
         webDriver.navigate().to("https://www.skillfactory.ru");
 
@@ -140,6 +154,8 @@ public class SkillfactoryTest {
     @Test
     public void clickMenuPython() {
 
+            //Проверка перехода с кнопки меню "Онлайн курсы" в шапке веб-страницы по выпадающему списку курсов. Курс "Python".
+
             webDriver.navigate().to("https://www.skillfactory.ru");
 
             wait.until(ExpectedConditions.presenceOfElementLocated(By.className("main__nav")));
@@ -156,6 +172,8 @@ public class SkillfactoryTest {
 
     @Test
     public void clickMenuBackendDevelopment() {
+
+            //Проверка перехода с кнопки меню "Онлайн курсы" в шапке веб-страницы по выпадающему списку курсов. Курс "Backend-разработка".
 
             webDriver.navigate().to("https://www.skillfactory.ru");
 
@@ -174,6 +192,8 @@ public class SkillfactoryTest {
     @Test
     public void clickMenuWebDevelopment() {
 
+            //Проверка перехода с кнопки меню "Онлайн курсы" в шапке веб-страницы по выпадающему списку курсов. Курс "Веб-разработка".
+
             webDriver.navigate().to("https://www.skillfactory.ru");
 
             wait.until(ExpectedConditions.presenceOfElementLocated(By.className("main__nav")));
@@ -191,6 +211,8 @@ public class SkillfactoryTest {
     @Test
     public void clickMenuApplicationDevelopment() {
 
+            //Проверка перехода с кнопки меню "Онлайн курсы" в шапке веб-страницы по выпадающему списку курсов. Курс "Разработка приложений".
+
             webDriver.navigate().to("https://www.skillfactory.ru");
 
             wait.until(ExpectedConditions.presenceOfElementLocated(By.className("main__nav")));
@@ -207,6 +229,8 @@ public class SkillfactoryTest {
 
     @Test
     public void clickMenuIntensiveСourses() {
+
+            //Проверка перехода с кнопки меню "Онлайн курсы" в шапке веб-страницы по выпадающему списку курсов. Курс "Интенсивные курсы".
 
             webDriver.navigate().to("https://www.skillfactory.ru");
 
@@ -226,6 +250,8 @@ public class SkillfactoryTest {
     @Test
     public void clickDataScience() {
 
+            //Проверка работы кнопки "Data Science"
+
             webDriver.navigate().to("https://www.skillfactory.ru");
 
             WebElement DataScience = webDriver.findElement(By.partialLinkText("Data Science"));
@@ -238,6 +264,8 @@ public class SkillfactoryTest {
 
     @Test
     public void clickAnalitikaDannyh() {
+
+        //Проверка работы кнопки "Аналитика данных"
 
         webDriver.navigate().to("https://www.skillfactory.ru");
 
@@ -252,6 +280,8 @@ public class SkillfactoryTest {
     @Test
     public void clickDesign() {
 
+            //Проверка работы кнопки "Дизайн"
+
             webDriver.navigate().to("https://www.skillfactory.ru");
 
             WebElement Design = webDriver.findElement(By.partialLinkText("Дизайн"));
@@ -264,6 +294,8 @@ public class SkillfactoryTest {
 
     @Test
     public void clickCorporativnoyeObuchenye() {
+
+        //Проверка перехода с кнопки меню "Корпоративное обучение" в шапке веб-страницы.
 
         webDriver.navigate().to("https://www.skillfactory.ru");
 
@@ -278,6 +310,8 @@ public class SkillfactoryTest {
     @Test
     public void clickBlog() {
 
+        //Проверка перехода с кнопки меню "Медиа" в шапке веб-страницы.
+
         webDriver.navigate().to("https://www.skillfactory.ru");
 
         WebElement Blog = webDriver.findElement(By.xpath("//*[@class='main__nav']//*[text()='Медиа']"));
@@ -290,6 +324,8 @@ public class SkillfactoryTest {
 
     @Test
     public void clickCareerCenter() {
+
+        //Проверка перехода с кнопки меню "Центр карьеры" в шапке веб-страницы.
 
         webDriver.navigate().to("https://www.skillfactory.ru");
 
@@ -304,6 +340,8 @@ public class SkillfactoryTest {
     @Test
     public void clickFreeEvents() {
 
+        //Проверка перехода с кнопки меню "Бесплатно" в шапке веб-страницы.
+
         webDriver.navigate().to("https://www.skillfactory.ru");
 
         WebElement FreeEvents = webDriver.findElement(By.xpath("//*[@class='main__nav']//*[text()='БЕСПЛАТНО']"));
@@ -316,6 +354,8 @@ public class SkillfactoryTest {
 
     @Test
     public void clickCardLinkWhiteHacker() {
+
+        //Проверка работы кнопки "Белый хакер"
 
         webDriver.navigate().to("https://www.skillfactory.ru");
 
@@ -409,6 +449,7 @@ public class SkillfactoryTest {
     public void clickNegativTestAdvertisingBanner() {
 
         //Проверка работы рекламного баннера без заполнения необходимых личных данных
+        //Не закрывает баннер после прохождения негативного сценария.
 
         webDriver.navigate().to("https://skillfactory.ru");
 
@@ -436,7 +477,7 @@ public class SkillfactoryTest {
 
     @After
     public void closeBrowser() {
-            //driver.quit();
+            //drive.quit();
             webDriver.quit();
     }
 
