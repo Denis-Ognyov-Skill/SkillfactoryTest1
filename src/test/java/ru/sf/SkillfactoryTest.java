@@ -26,7 +26,9 @@ public class SkillfactoryTest {
         @Before
         public void init() {
 
-            WebDriverManager.chromedriver().setup();
+            //Указываем путь driver
+
+            WebDriverManager.chromedriver().setup(); //Или таким способом: setProperty("webdriver.chrome.driver", "path/to/chromedriver.exe");
 
             webDriver = new ChromeDriver();
 
